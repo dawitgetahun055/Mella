@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:opsz,wght@14..32,700&family=Poppins:wght@400;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 0.5px solid lightgray;
+}
+
+.left-nav {
+  width: auto;
+  height: 24px;
+  display: flex;
+  gap: 160px;
+  align-items: center;
+}
+
+.left-nav span {
+  text-wrap: nowrap;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.left-nav ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-nav {
+  width: auto;
+  height: 38px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.right-nav .search-wrapper {
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 12px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.search-wrapper > svg {
+  cursor: pointer;
+}
+
+.right-nav .search-content {
+  display: flex;
+  height: 24px;
+  width: auto;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: nowrap;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.search-content p {
+  text-wrap: nowrap;
+}
+
+.icons ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  align-items: center;
+}
+
+.path {
+  margin-left: 63px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.path span {
+  color: gray;
+}
+
+.Product-list {
+  width: fit-content;
+  height: auto;
+  margin: auto;
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  top: 30px;
+}
+
+.Product-list .Cart {
+  display: flex;
+  gap: 284px;
+  box-shadow: -5px 5px 13px 0 rgba(0, 0, 0, 0.05);
+  padding: 0 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.Cart-item {
+  box-shadow: -5px 5px 13px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 10px 30px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  width: 210px;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.item p {
+    width: 100px;
+}
+
+.item svg {
+  align-self: flex-start;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+input[type="number"] {
+  width: 72px;
+  height: 44px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.Cart-item .price {
+  margin-left: 125px;
+}
+.Cart-item input {
+  margin-left: 250px;
+}
+.Cart-item .subtotal-price {
+  margin-left: 275px;
+  padding-right: 20px;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Buttons > button {
+  padding: 16px 48px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.Cart-total {
+  display: flex;
+  flex-direction: column;
+  width: 765px;
+  height: auto;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0 14px;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.Cart-total h3 {
+    font-family: "DM Sans";
+    font-size: 20px;
+}
+
+.Cart-total .Cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.Checkout-buttons {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.Checkout-buttons button {
+  padding: 16px 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.Coupon {
+  display: flex;
+  gap: 10px;
+}
+
+.Coupon input {
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.Checkout-buttons button {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #0e9b4b;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button > .right-arrow {
+  font-size: 30px;
+}
