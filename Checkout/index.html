@@ -128,84 +128,99 @@
         </div>
       </div>
     </nav>
-    <p class="path"><span>Home</span> / Cart</p>
-    <div class="Product-list">
-      <div class="Cart Cart-header">
-        <h3>Product</h3>
-        <h3>Price</h3>
-        <h3>Quantity</h3>
-        <h3>Subtotal</h3>
-      </div>
-      <div class="Cart-item">
-        <div class="item">
-          <svg
-            width="25"
-            height="24"
-            viewBox="0 0 25 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+    <p class="path">
+      <span>Account / My Account / Product / view Cart / </span>CheckOut
+    </p>
+    <h1>Billing Details</h1>
+    <div class="content-wrapper">
+      <div class="Form-Container">
+        <div class="form-group">
+          <label for="First_Name">First Name</label>
+          <input type="text" class="First_Name" />
+        </div>
+        <div class="form-group">
+          <label for="Company_Name">Company Name</label>
+          <input type="text" class="Company_Name" />
+        </div>
+        <div class="form-group">
+          <label for="Street_Address">Street Address</label>
+          <input type="text" class="Street_Address" />
+        </div>
+        <div class="form-group">
+          <label for="Apartment">Apartment, floor, etc. (Optional)</label>
+          <input type="text" class="Apartment" />
+        </div>
+        <div class="form-group">
+          <label for="Town">Town/City</label>
+          <input type="text" class="Town" />
+        </div>
+        <div class="form-group">
+          <label for="Phone_Number">Phone Number</label>
+          <input type="text" class="Phone_Number" />
+        </div>
+        <div class="form-group">
+          <label for="Email_Address">Email Address</label>
+          <input type="text" class="Email_Address" />
+        </div>
+        <div class="checkout-group">
+          <input class="checkbox" type="checkbox" /><span class="save"
+            >Save this information for faster check-out next time</span
           >
-            <circle cx="12.5" cy="12" r="9" fill="#DB4444" />
-            <path
-              d="M9.5 15L12.5 12M15.5 9L12.4994 12M12.4994 12L9.5 9M12.5 12L15.5 15"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <img src="./Images/Image1.png" alt="LCD Monitor" />
-          <p>LCD Monitor</p>
         </div>
-        <p class="price">$650</p>
-        <input type="number" min="1" value="1" />
-        <p class="subtotal-price">$650</p>
       </div>
-      <div class="Cart-item">
-        <div class="item">
-          <svg
-            width="25"
-            height="24"
-            viewBox="0 0 25 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="12.5" cy="12" r="9" fill="#DB4444" />
-            <path
-              d="M9.5 15L12.5 12M15.5 9L12.4994 12M12.4994 12L9.5 9M12.5 12L15.5 15"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <img src="./Images/Image2.png" alt="LCD Monitor" />
-          <p>H1 Gamepad</p>
+      <div class="checkout-summary">
+        <div class="Gamepad">
+          <div class="gamepad-group">
+            <img src="../Cart/Images/Image2.png" alt="H1 Gamepad" />
+            <p>H1 Gamepad</p>
+          </div>
+          <p>$650</p>
         </div>
-        <p class="price">$650</p>
-        <input type="number" min="1" value="2" />
-        <p class="subtotal-price">$1100</p>
-      </div>
-      <div class="Buttons">
-        <button>Return to Shop</button>
-        <button>Update Cart</button>
-      </div>
-      <div class="Cart-total">
-        <h3>Cart Total</h3>
-        <div class="Cart-subtotal">
-          <p>Subtotal:</p>
-          <p>$1750</p>
+        <div class="Gamepad">
+          <div class="gamepad-group">
+            <img src="../Cart/Images/Image1.png" alt="H1 Gamepad" />
+            <p>LCS Monitor</p>
+          </div>
+          <p>$110</p>
         </div>
-        <div class="Cart-subtotal">
-          <p>Shipping:</p>
-          <p>Free</p>
-        </div>
-        <div class="Cart-subtotal">
-          <p>Total:</p>
-          <p>$1750</p>
-        </div>
-        <div class="Checkout-buttons">
-          <button>Process to Checkout</button>
+        <div class="price">
+          <div class="pricing-info">
+            <p>Subtotal:</p>
+            <p>$1750</p>
+          </div>
+          <div class="pricing-info">
+            <p>Shipping:</p>
+            <p>Free</p>
+          </div>
+          <div class="pricing-info">
+            <p>Total:</p>
+            <p>$1750</p>
+          </div>
+          <div class="radio">
+            <input type="checkbox" class="save" /><span>Cash on delivery</span>
+          </div>
+          <div class="checkout-buttons">
+            <button class="Placeorder">Place Order</button>
+            <div class="Coupon">
+              <input type="text" placeholder="Coupon Code" />
+              <button>
+                <span>
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 0.500061L9.14937 2.35069L16.4731 9.68756H0.5V12.3126H16.4731L9.14937 19.6494L11 21.5001L21.5 11.0001L11 0.500061Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

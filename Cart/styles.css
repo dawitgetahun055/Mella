@@ -94,6 +94,8 @@ ul a {
   align-items: center;
 }
 
+/* Path  */
+
 .path {
   margin-left: 63px;
   font-family: "DM Sans", sans-serif;
@@ -102,6 +104,8 @@ ul a {
 .path span {
   color: gray;
 }
+
+/* Product List */
 
 .Product-list {
   width: fit-content;

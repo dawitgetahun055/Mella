@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:opsz,wght@14..32,700&family=Poppins:wght@400;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 0.5px solid lightgray;
+}
+
+.left-nav {
+  width: auto;
+  height: 24px;
+  display: flex;
+  gap: 160px;
+  align-items: center;
+}
+
+.left-nav span {
+  text-wrap: nowrap;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.left-nav ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-nav {
+  width: auto;
+  height: 38px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.right-nav .search-wrapper {
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 12px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.search-wrapper > svg {
+  cursor: pointer;
+}
+
+.right-nav .search-content {
+  display: flex;
+  height: 24px;
+  width: auto;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: nowrap;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.search-content p {
+  text-wrap: nowrap;
+}
+
+.icons ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Path */
+
+.path {
+  margin-left: 63px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.path span {
+  color: gray;
+}
+
+/* Content Wrapper */
+
+.content-wrapper {
+  display: flex;
+  width: 1252px;
+  height: auto;
+  gap: 117px;
+  margin-bottom: 100px;
+}
+
+/* Form */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-left: 94px;
+}
+
+.Form-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 94px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  height: 82px;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.form-group label::after {
+  content: "*";
+  color: #db4444;
+}
+
+.form-group input {
+  height: 50px;
+  background-color: #f5f5f5;
+  border: 1px transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.checkout-group {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.save {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Checkout-Summery */
+
+.checkout-summary {
+  /* border: 1px solid red; */
+  width: 685px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.Gamepad {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.25);
+}
+
+.Gamepad .gamepad-group {
+  display: flex;
+  gap: 20px;
+  width: 177px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.gamepad-group img {
+  height: auto;
+  object-fit: contain;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.radio {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.radio > input {
+  height: 24px;
+  width: 24px;
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-buttons button {
+  cursor: pointer;
+}
+
+.checkout-buttons button:hover {
+  background-color: rgba(14, 155, 75, 0.85);
+}
+
+.Coupon {
+  display: flex;
+  gap: 9px;
+}
+
+.Coupon input {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  outline: 1.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.Coupon input::placeholder {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.Coupon button {
+  background-color: #0e9b4b;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.Placeorder {
+  padding: 16px 48px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0e9b4b;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
